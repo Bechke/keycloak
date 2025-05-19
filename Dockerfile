@@ -21,6 +21,6 @@ ENV KC_BOOTSTRAP_ADMIN_USERNAME=admin
 ENV KC_BOOTSTRAP_ADMIN_PASSWORD=admin
 
 # Start Keycloak in production mode
-ENTRYPOINT ["bin/kc.sh", "start", "--http-enabled=true", "--hostname-strict=false",  "--cache=local"]
+ENTRYPOINT ["bin/kc.sh", "start", "--http-enabled=true", "--hostname-strict=false", "--http-port=8080", "--http-host=0.0.0.0", "--cache=local"]
 
 EXPOSE 8080
