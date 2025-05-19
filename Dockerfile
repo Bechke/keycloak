@@ -19,6 +19,6 @@ ENV KEYCLOAK_ADMIN=admin
 ENV KEYCLOAK_ADMIN_PASSWORD=admin
 
 # Start Keycloak in production mode
-ENTRYPOINT ["bin/kc.sh", "start"]
+ENTRYPOINT ["bin/kc.sh", "start", "--http-enabled=true", "--hostname-strict=false", "--hostname-strict-https=false"]
 
 EXPOSE 8080
