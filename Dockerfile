@@ -10,7 +10,7 @@ ENV KC_LOG_LEVEL=info
 
 # Use a production DB (PostgreSQL here)
 ENV KC_DB=postgres
-ENV KC_DB_URL=postgresql://root:cGqA4k2Rfu0WuYRqmPIcRRaiiTBttf96@dpg-d0lei8ruibrs73a8dsf0-a.oregon-postgres.render.com/auth_db_gtww
+ENV KC_DB_URL=jdbc:postgresql://dpg-d0lei8ruibrs73a8dsf0-a.oregon-postgres.render.com:5432/auth_db_gtww
 ENV KC_DB_USERNAME=root
 ENV KC_DB_PASSWORD=cGqA4k2Rfu0WuYRqmPIcRRaiiTBttf96
 
